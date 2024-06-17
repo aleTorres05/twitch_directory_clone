@@ -34,10 +34,10 @@ export default function App() {
     },
   ];
   return (
-    <main className="w-full min-h-screen p-1 grid grid-cols-[10%_90%] md:grid-cols-[20%_1fr] grid-rows-[3.2rem_1fr]">
+    <main className="w-full min-h-screen p-1 grid grid-cols-[10%_90%] md:grid-cols-[10%_1fr] xl:grid-cols-[20%_1fr] grid-rows-[3.2rem_1fr]">
       <Navbar />
       <aside className="col-start-1 bg-[#1F1F23]">
-        <p className="hidden md:block col-start-1 col-end-4 mt-2 ml-2 text-sm">
+        <p className="hidden lg:block col-start-1 col-end-4 mt-2 ml-2 text-sm">
           CANALES RECOMENDADOS
         </p>
         {recommendedStreamers.map((streamer) => {

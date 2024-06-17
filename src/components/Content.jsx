@@ -1,6 +1,6 @@
 export default function Content({ coverImg, title, viewers, catalog }) {
   return (
-    <section className="p-2 w-[100%]  md:h-[200px] md:w-[200px]">
+    <section className="p-2 w-[100%] md:mb-[130px] md:mr-[25px] md:h-[200px] md:w-[200px] lg:mr-[1rem] xl:mr-[1rem] xl:w-[100%]">
       <div>
         <img className="w-[100%]" src={`${coverImg}`} alt="" />
       </div>
