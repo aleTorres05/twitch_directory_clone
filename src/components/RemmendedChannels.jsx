@@ -7,11 +7,11 @@ export default function RemmendedChannels({
 }) {
   console.log(username);
   return (
-    <aside className="grid grid-col-1 lg:grid-cols-[20%_1fr_1fr] bg-[#1F1F23]">
+    <aside className="grid grid-col-1 xl:grid-cols-[20%_1fr_1fr] bg-[#1F1F23] justify-center content-center">
       <div>
         {status && (
           <img
-            className="h-[50px] w-[50px]"
+            className="h-[50px] w-[50px] xl:h-[80px]"
             src={`${avatar}${username}`}
             alt="avatar"
           />
@@ -24,11 +24,11 @@ export default function RemmendedChannels({
           />
         )}
       </div>
-      <div className="hidden lg:block">
+      <div className="hidden xl:block">
         <p>{username}</p>
         <p className=" text-xs">{title}</p>
       </div>
-      <div className="hidden lg:grid grid-cols-[20%_50%] justify-end items-center">
+      <div className="hidden xl:grid grid-cols-[20%_50%] justify-end items-center">
         {status && (
           <a className="bg-red-500 border h-[12px] w-[12px] rounded-full mr-1 border-neutral-900"></a>
         )}
